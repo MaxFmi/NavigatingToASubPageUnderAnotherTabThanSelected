@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NavigationIssue"
+             x:Class="NavigationIssue.MainPage">
+
+    <TabBar Route="TabBar">
+
+        <Tab Title="TabItem 1"
+             Route="Tab.Item1">
+            <ShellContent ContentTemplate="{DataTemplate local:TabItem1RootPage}" />
+        </Tab>
+
+        <Tab Title="TabItem 2"
+             Route="Tab.Item2">
+            <ShellContent ContentTemplate="{DataTemplate local:TabItem2RootPage}" />
+        </Tab>
+
+        <Tab Title="TabItem 3"
+             Route="Tab.Item3">
+            <ShellContent ContentTemplate="{DataTemplate local:TabItem3RootPage}" />
+        </Tab>
+
+    </TabBar>
+    
+</Shell>

@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DebugType>pdbonly</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="DryIoc.dll" Version="4.8.8" />
+        <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />
+        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2478" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="TabItem2RootPage.xaml.cs">
+        <DependentUpon>TabItem2RootPage.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="TabItem3RootPage.xaml.cs">
+        <DependentUpon>TabItem3RootPage.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="RegularPage.xaml.cs">
+        <DependentUpon>RegularPage.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="ModalPage.xaml.cs">
+        <DependentUpon>ModalPage.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="TabItem1RootPage.xaml.cs">
+        <DependentUpon>TabItem1RootPage.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+</Project>
